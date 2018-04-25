@@ -32,7 +32,7 @@ const list = [
 export class HistoryScreen extends Component{
     constructor(props){
 	super(props);
-	this.state ={	    
+	this.state ={
 	};
 	this.state.data = [];
 	for(let i=0; i< 30; i++){
@@ -43,15 +43,15 @@ export class HistoryScreen extends Component{
 	return(
 	    <View style={styles.listContainer}>
 	      <FlatList
-		style={{width:"100%"}}
-		data={this.state.data}
-		renderItem={
-		    ({item}) => <CardView
-				      amount={item.amount}
-				      />
-		    
-		}
-		/>
+      		style={{width:"100%"}}
+      		data={this.state.data}
+      		renderItem={
+    		    ({item}) => <CardView
+    				              amount={item.amount}
+			                  />
+
+		      }
+		    />
 	    </View>
 	);
     }

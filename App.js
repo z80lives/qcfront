@@ -25,34 +25,34 @@ export default class App extends Component {
 		key="root"
 		hideNavBar={true}
 		>
-		
-		<Scene key="login" component={LoginScreen} title="Login" initial={true}		       
+
+		<Scene key="login" component={LoginScreen} title="Login" initial={true}
 		       />
 
-		  
-		<Tabs
 
-		  key="main"
-                  iconName="ios-add-circle"
-                  icon={TabIcon}
-                  activeTintColor={colors.tab.activeColor}
-                  inactiveTintColor={colors.tab.inactiveColor}
-                  tabBarPosition="top"
-                  swipeEnabled
-                  showLabel
-                  labelStyle={styles.tabBarLabel}
-                  tabBarStyle={styles.tabBarStyle}
-		  upperCaseLabel={false}
-                  indicatorStyle={{ backgroundColor: '#3f132a', height: 4 }}>
-   
-		  <Scene key="tabCards" title="My Cards" component={CardScreen} initial={true}
-			 hideNavBar={true}
-			 tabBarLabel="Home"
-			 />
-		  <Scene key="tabHistory" title="History" component={HistoryScreen} 		       hideNavBar={true}
-			 tabBarLabel="History"
-			 />
-		  
+  		<Tabs
+
+  		  key="main"
+                    iconName="ios-add-circle"
+                    icon={TabIcon}
+                    activeTintColor={colors.tab.activeColor}
+                    inactiveTintColor={colors.tab.inactiveColor}
+                    tabBarPosition="top"
+                    swipeEnabled
+                    showLabel
+                    labelStyle={styles.tabBarLabel}
+                    tabBarStyle={styles.tabBarStyle}
+  		  upperCaseLabel={false}
+                    indicatorStyle={{ backgroundColor: '#3f132a', height: 4 }}>
+
+  		  <Scene key="tabCards" title="My Cards" component={CardScreen} initial={true}
+  			 hideNavBar={true}
+  			 tabBarLabel="Home"
+  			 />
+  		  <Scene key="tabHistory" title="History" component={HistoryScreen} 		       hideNavBar={true}
+  			 tabBarLabel="History"
+  			 />
+
 		</Tabs>
 		</Scene>
 	    </Router>
@@ -60,4 +60,3 @@ export default class App extends Component {
 
     }
 }
-

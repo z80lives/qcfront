@@ -14,17 +14,20 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF'
   },
+  logoContainer:{
+    justifyContent:'center',
+  },
 
     cardContainer:{
-	flex: 1,
-	alignItems: 'center',
-	backgroundColor: '#F5FCFE'
+    	flex: 1,
+    	alignItems: 'center',
+    	backgroundColor: '#F5FCFE'
     },
-    
+
     listContainer:{
 	flex: 1,
 	alignItems: 'center',
-	backgroundColor: '#5555bb'
+	backgroundColor: '#f2f2f2'
     },
 
     textField:{
@@ -37,10 +40,13 @@ export const styles = StyleSheet.create({
 
 
     loginButton:{
-	backgroundColor: 'black',
+	backgroundColor: '#f53b57',
 	borderWidth: 2,
 	borderColor: 'white',
-	borderRadius: 30
+	borderRadius: 30,
+  shadowOffset: {width: 10, height: 10},
+  shadowColor: '#621722',
+  shadowOpacity: 1.0
     },
 
     subtitleView:{
@@ -51,9 +57,9 @@ export const styles = StyleSheet.create({
 
     flatListItem:{
         width: "90%",
-        backgroundColor: "#cecbca"	
+        backgroundColor: "#cecbca"
     },
-    
+
     loginButtonContainer: {
 	marginVertical: 10,
 	height: 50,
@@ -85,7 +91,7 @@ export const styles = StyleSheet.create({
 
     bluecontainer:{
 	flex: 1,
-	backgroundColor: '#4444bb',
+	backgroundColor: '#ffff',
 	justifyContent: 'center',
 	alignItems: 'center',
 	flexDirection: 'column'
@@ -103,7 +109,7 @@ export const styles = StyleSheet.create({
             borderColor    : '#b7b7b7',
             backgroundColor: '#3f433a',
             opacity        : 1,
-	    	   
+
 	    marginBottom: 1,
             flexWrap: 'nowrap',
             //flexDirection:'row',
@@ -113,10 +119,21 @@ export const styles = StyleSheet.create({
             shadowRadius: 2,
             elevation: 1
     },
-    
+
   instructions: {
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5
+  },
+
+  history_item: {
+    flex:1,
+    flexDirection:"column",
+    backgroundColor: 'white',
+    margin: 4,
+    padding: 15
+  },
+  history_amount:{
+    alignSelf: 'flex-end'
   }
 });
