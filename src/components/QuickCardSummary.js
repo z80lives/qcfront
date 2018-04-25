@@ -9,6 +9,7 @@ import {
        } from 'react-native';
 
 import {Card, Button} from 'react-native-elements';
+import { Actions } from 'react-native-router-flux';
 
 /*const cardStyle = StyleSheet.create({
     container: {
@@ -46,6 +47,9 @@ export default class QuickCardItem extends Component{
 		backgroundColor='#03A9F4'
 		fontFamily='Lato'
 		buttonStyle={{borderRadius: 0, marginLeft: 150, marginRight: 0, marginBottom: 0}}
+		onPress={
+			 Actions.cardDetails
+		  }		
 		title='View' />
 
 	    </Card>
