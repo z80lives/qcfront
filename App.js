@@ -26,15 +26,17 @@ export default class App extends Component {
 		key="root"
 		hideNavBar={true}
 		>
-		
-		<Scene key="login" component={LoginScreen} title="Login" initial={true}		       
+
+		<Scene key="login" component={LoginScreen} title="Login" initial={true}
 		       />
 
 		<Stack key="home">
 		  
 		  <Tabs
 
-		    key="main"
+  		<Tabs
+
+  		  key="main"
                     iconName="ios-add-circle"
                     icon={TabIcon}
                     activeTintColor={colors.tab.activeColor}
@@ -65,4 +67,3 @@ export default class App extends Component {
 
     }
 }
-

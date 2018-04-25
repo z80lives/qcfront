@@ -29,10 +29,10 @@ export default class QuickCardItem extends Component{
 	    limit: "50"
 	};
     }
-    
+
     render(){
 	return (
-	    <Card
+	    <Card 
 	      title={this.props.cardId}
 	      containerStyle={{width: 300}}
 	      >
@@ -42,7 +42,7 @@ export default class QuickCardItem extends Component{
 	      <Text style={{marginBottom: 10}}>
 		Balance: {this.props.balance}
 	      </Text>
-	      
+
 	      <Button
 		backgroundColor='#03A9F4'
 		fontFamily='Lato'
@@ -51,7 +51,7 @@ export default class QuickCardItem extends Component{
 			 Actions.cardDetails
 		  }		
 		title='View' />
-	      
+
 	    </Card>
 	      );
 /*	return (
@@ -62,4 +62,3 @@ export default class QuickCardItem extends Component{
 	    );*/
     }
 }
-

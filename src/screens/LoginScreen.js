@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-//import 
+//import
 import {
     Text,
     TextInput,
     View,
-    TouchableOpacity
+    TouchableOpacity,
+    Image
 } from 'react-native';
 
 
@@ -25,6 +26,9 @@ export class LoginScreen extends Component{
 	);*/
 	return (
 	    <View style={styles.bluecontainer}>
+      <View style={styles.logoContainer}>
+        <Image source={require('../images/logo.png')} />
+      </View >
 	       <TextInput
 		 style={styles.textField}
 		 placeholder="IKAD"
@@ -47,7 +51,7 @@ export class LoginScreen extends Component{
 			 Actions.main
 		  }
 		  style={[styles.loginButton, styles.loginButtonContainer]}
-		  
+
 		  ><Text style={styles.loginTextStyle} > Login</Text></TouchableOpacity>
 		</View>
 	);
