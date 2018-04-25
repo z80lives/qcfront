@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import {styles} from '../styles/styles';
 
+
+
 import {
 	Text,
     	View,
@@ -19,11 +21,11 @@ export default class TransactionRecordItem extends Component{
 	};
     }
     render(){
-	var amount = "Amount: "+this.props.amount;
+	var amount = this.props.amount;
 	return (
 	    <View style={styles.history_item}>
-	      <Text>Date: {this.state.date}</Text>
-              <Text style={styles.history_amount}>{amount}</Text>
+	      <Text> <Text style={{fontWeight:"bold", fontSize: 16}}>Date:</Text> {this.state.date}</Text>
+            <Text style={styles.history_amount}> <Text style={{fontWeight:"bold", fontSize: 15}}> Amount: </Text>  <Text >{amount}</Text></Text>
 	    </View>
 	);
     }

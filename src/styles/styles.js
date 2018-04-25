@@ -131,7 +131,12 @@ export const styles = StyleSheet.create({
     flexDirection:"column",
     backgroundColor: 'white',
     margin: 4,
-    padding: 15
+    padding: 15,
+    shadowColor: '#30C1DD',
+  shadowRadius: 10,
+  shadowOpacity: 0.6,
+  elevation: 8,
+  shadowOffset: {width: 0,height: 4}
   },
   history_amount:{
     alignSelf: 'flex-end'
