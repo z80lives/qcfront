@@ -1,3 +1,4 @@
-import App from './src/App';
+import { AppRegistry } from 'react-native';
+import App from './App';
 
-new App(); //eslint-disable-line
+AppRegistry.registerComponent('quickcardapp', () => App);
