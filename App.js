@@ -32,8 +32,6 @@ export default class App extends Component {
 
 		<Stack key="home">
 		  
-		  <Tabs
-
   		<Tabs
 
   		  key="main"
