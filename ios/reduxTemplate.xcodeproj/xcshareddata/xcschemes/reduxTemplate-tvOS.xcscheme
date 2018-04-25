@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "qcfront-tvOS.app"
-               BlueprintName = "qcfront-tvOS"
-               ReferencedContainer = "container:qcfront.xcodeproj">
+               BuildableName = "reduxTemplate-tvOS.app"
+               BlueprintName = "reduxTemplate-tvOS"
+               ReferencedContainer = "container:reduxTemplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "qcfront-tvOSTests.xctest"
-               BlueprintName = "qcfront-tvOSTests"
-               ReferencedContainer = "container:qcfront.xcodeproj">
+               BuildableName = "reduxTemplate-tvOSTests.xctest"
+               BlueprintName = "reduxTemplate-tvOSTests"
+               ReferencedContainer = "container:reduxTemplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "qcfront-tvOSTests.xctest"
-               BlueprintName = "qcfront-tvOSTests"
-               ReferencedContainer = "container:qcfront.xcodeproj">
+               BuildableName = "reduxTemplate-tvOSTests.xctest"
+               BlueprintName = "reduxTemplate-tvOSTests"
+               ReferencedContainer = "container:reduxTemplate.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "qcfront-tvOS.app"
-            BlueprintName = "qcfront-tvOS"
-            ReferencedContainer = "container:qcfront.xcodeproj">
+            BuildableName = "reduxTemplate-tvOS.app"
+            BlueprintName = "reduxTemplate-tvOS"
+            ReferencedContainer = "container:reduxTemplate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "qcfront-tvOS.app"
-            BlueprintName = "qcfront-tvOS"
-            ReferencedContainer = "container:qcfront.xcodeproj">
+            BuildableName = "reduxTemplate-tvOS.app"
+            BlueprintName = "reduxTemplate-tvOS"
+            ReferencedContainer = "container:reduxTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "qcfront-tvOS.app"
-            BlueprintName = "qcfront-tvOS"
-            ReferencedContainer = "container:qcfront.xcodeproj">
+            BuildableName = "reduxTemplate-tvOS.app"
+            BlueprintName = "reduxTemplate-tvOS"
+            ReferencedContainer = "container:reduxTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
