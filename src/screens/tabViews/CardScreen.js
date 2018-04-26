@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {
     View,
     FlatList,
+    Text
        } from 'react-native';
 
 import {styles} from '../../styles/styles';
@@ -34,8 +35,7 @@ export class CardListScreen extends Component{
 	}
 	this.state = {
 	    data: data
-	};
-	
+	};	
     }
     
     render(){
@@ -51,7 +51,12 @@ export class CardListScreen extends Component{
 	    balance={25.3}
 		  progress={100}
 		  />
-		</View>
+	      </View>
+
+	      <View style={{margin:5}}>
+		<Text style={styles.title1_style}>Child cards</Text>
+	      </View>
+
 	      
 	      <FlatList
 		data={this.state.data}
