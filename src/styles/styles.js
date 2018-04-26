@@ -215,6 +215,18 @@ export const styles = StyleSheet.create({
 	marginRight: 10,
 	marginTop:20,
         fontSize: 13
+    },
+
+    activationLabel:{
+	marginLeft: 10,
+	marginRight: 50,
+	flex: 0.8
+    },
+
+    subtitlebar:{
+	backgroundColor: "#f53b57",
+	width: "100%",
+	height: 50
     }
 
 

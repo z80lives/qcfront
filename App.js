@@ -100,8 +100,7 @@ export default class App extends Component {
 		    
 		    <Scene key="tabCards"  component={CardScreen} initial={true}
 			   tabBarLabel="Home"
-			   title="Home"			   
-			   
+			   title="Home"			   			   
 			   />
 		    <Scene key="tabHistory"  component={HistoryScreen} 		
 			   tabBarLabel="History"
@@ -110,13 +109,16 @@ export default class App extends Component {
 		    
 		  </Scene>
 		  
-		<Scene key="cardDetails" title="Card Details" component={CardDetailsScreen}		
-		       />
-
+		<Scene key="cardDetails" title="Card Details" component={CardDetailsScreen}
+		/>
+		
 		<Scene key="addNewCard" title="AddCard" component={AddNewCard}
-		       />
+		/>
+
+	    	<Scene key="viewHistory" title="View History" component={HistoryScreen}
+		/>
+
 	  	<Scene key="bankList" title="Choose Account" component={BankListRegistered}		       
-		       initial={true}
 		       />
 		
 	  	

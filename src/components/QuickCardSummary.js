@@ -28,11 +28,13 @@ import { Actions } from 'react-native-router-flux';
 export default class QuickCardItem extends Component{
     constructor(props){
 	super(props);
+	var limit = 0.3;
 	this.state = {
+	    username: props.cardId,
 	    idnum: "123445242342",
 	    account_num: "1234-123-1234",
-	    limit: "50",
-	    progress: 20
+	    limit: limit,
+	    progress: 0.2
 	};
     }
 
@@ -59,7 +61,7 @@ export default class QuickCardItem extends Component{
 	      <View style={{flex:1, flexDirection:"row"}}>
 		<Text style={styles.text_label}>Limit Usage:</Text>
 		<View style={{padding:10}}>
-		  <Progress.Bar progress={0.3}  />
+		<Progress.Bar progress={this.state.progress}  />
 		</View>
 	      </View>
 
@@ -69,8 +71,10 @@ export default class QuickCardItem extends Component{
 		fontFamily='Lato'
 		buttonStyle={[styles.defaultButton, {borderRadius: 0, marginLeft: 100, marginRight: 0, marginBottom: 0}]}
 		onPress={
-			 Actions.cardDetails
-		  }
+		    ()=>Actions.cardDetails({username:this.state.username,
+					     limit: this.state.limit
+					    })
+		}	    
 		title='View' />
 	    </Card>
 	      );

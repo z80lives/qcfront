@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {
     Text,
+    StatusBar,
     View,
     FlatList
        } from 'react-native';
@@ -49,7 +50,14 @@ function randomDate(start, end) {
 export class HistoryScreen extends Component{
     constructor(props){
 	super(props);
+
+	if(props.username == null){
+	    props = {};
+	    props.username = "Parent";
+	}	
+	
 	this.state ={
+	    name: props.username
 	};
 	this.state.data = [];
 	for(let i=0; i< 30; i++){
@@ -64,8 +72,11 @@ export class HistoryScreen extends Component{
 	}
     }
     render(){
-	return(
-	    <View style={styles.listContainer}>
+	return(	    
+		<View style={styles.listContainer}>
+		<View style={styles.subtitlebar}>
+		<Text style={[styles.title1_style, {marginBottom:3, color: 'white'}]}>{this.state.name}'s card</Text>
+		</View>
 	      <FlatList
       		style={{width:"100%"}}
       		data={this.state.data}

@@ -34,8 +34,7 @@ export class CardListScreen extends Component{
 	}
 	this.state = {
 	    data: data
-	};
-	
+	};	
     }
     
     render(){
