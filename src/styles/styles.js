@@ -29,36 +29,38 @@ export const styles = StyleSheet.create({
     justifyContent:'center'
   },
 
-    cardContainer:{
-    	flex: 1,
-    	alignItems: 'center',
-    	backgroundColor: '#F5FCFE'
-    },
+  cardContainer:{
+  	flex: 1,
+  	alignItems: 'center',
+  	backgroundColor: '#f2f2f2'
+  },
 
-    listContainer:{
-	flex: 1,
-	alignItems: 'center',
-	backgroundColor: '#f2f2f2'
-    },
+  listContainer:{
+  	flex: 1,
+  	alignItems: 'center',
+  	backgroundColor: '#f2f2f2'
+  },
 
-    textField:{
-	width: 250,
-	height: 40,
-	borderColor: 'gray',
-	borderWidth: 1,
-	backgroundColor: '#e0e0e0'
-    },
+  textField:{
+  	width: 250,
+  	height: 40,
+  	borderColor: 'gray',
+  	borderWidth: 1,
+  	backgroundColor: 'rgba(224, 224, 224, 0.8)',
+    marginBottom:10
+  },
 
 
-    loginButton:{
-	backgroundColor: '#f53b57',
-	borderWidth: 2,
-	borderColor: 'white',
-	borderRadius: 30,
-  shadowOffset: {width: 10, height: 10},
-  shadowColor: '#621722',
-  shadowOpacity: 1.0
-    },
+  loginButton:{
+  	backgroundColor: '#f53b57',
+  	borderWidth: 2,
+  	borderColor: '#f93b57',
+  	borderRadius: 30,
+    shadowOffset: {width: 10, height: 10},
+    shadowColor: '#621722',
+    shadowOpacity: 1.0,
+    elevation: 10
+  },
 
     subtitleView:{
 	flexDirection: 'row',
@@ -66,67 +68,70 @@ export const styles = StyleSheet.create({
 	paddingTop: 5
     },
 
-    flatListItem:{
-        width: "90%",
-        backgroundColor: "#cecbca"
-    },
+  flatListItem:{
+      width: "90%",
+      backgroundColor: "#cecbca"
+  },
 
-    loginButtonContainer: {
-	marginVertical: 10,
-	height: 50,
-	width: 250,
-	justifyContent: 'center',
-	alignItems: 'center'
-    },
+  loginButtonContainer: {
+  	marginVertical: 10,
+  	height: 50,
+  	width: 250,
+  	justifyContent: 'center',
+  	alignItems: 'center'
+  },
 
-    loginTextStyle: {
-	color: 'white',
-	textAlign: 'center',
-	color: '#ffffff',
-	fontWeight: 'bold'
-    },
+  loginTextStyle: {
+  	color: 'white',
+  	textAlign: 'center',
+  	color: '#ffffff',
+  	fontWeight: 'bold'
+  },
 
-    defaultButton:{
-	alignItems: 'center',
-	backgroundColor: '#ff1122',
-	paddingLeft: 30,
-	paddingRight: 30,
-	paddingTop: 10,
-	paddingBottom: 10
-    },
+  defaultButton:{
+  	alignItems: 'center',
+  	backgroundColor: '#f53b57',
+  	paddingLeft: 30,
+  	paddingRight: 30,
+  	paddingTop: 10,
+  	paddingBottom: 10
+  },
 
-    defaultText:{
-	margin: 3,
-	color: '#fecefe'
-    },
+  defaultText:{
+  	margin: 3,
+  	color: '#fecefe'
+  },
 
-    bluecontainer:{
-	flex: 1,
-	backgroundColor: '#ffff',
-	justifyContent: 'center',
-	alignItems: 'center',
-	flexDirection: 'column'
-    },
+  bluecontainer:{
+  	flex: 1,
+  	backgroundColor: '#ffff',
+  	justifyContent: 'center',
+  	alignItems: 'center',
+  	flexDirection: 'column'
+  },
 
 
-    tabBarLabel:{
-	    fontFamily: 'rubik',
-	    fontWeight: '600'
+  tabBarLabel:{
+    fontFamily: 'rubik',
+    fontWeight: '600'
 	},
 
-    tabBarStyle: {
-	    //	color: "#3f23f3",
-        backgroundColor: '#ff433a',
-        opacity        : 1,
-	    
-            flexWrap: 'nowrap',
-            //flexDirection:'row',
-            shadowColor: '#000',
-            shadowOffset: { width: 20, height: 2 },
-            shadowOpacity: 0.2,
-            shadowRadius: 2,
-            elevation: 1
-    },
+  tabBarStyle: {
+    //	color: "#3f23f3",
+    borderTopWidth : .2,
+    borderColor    : '#b7b7b7',
+    backgroundColor: '#3f433a',
+    opacity        : 1,
+
+    marginBottom: 1,
+    flexWrap: 'nowrap',
+    //flexDirection:'row',
+    shadowColor: '#000',
+    shadowOffset: { width: 10, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 1
+  },
 
     navBarStyle:{
 	backgroundColor: '#ff433a',
@@ -147,17 +152,29 @@ export const styles = StyleSheet.create({
     margin: 4,
     padding: 15,
     shadowColor: '#30C1DD',
-      shadowRadius: 10,
-      shadowOpacity: 0.6,
-      elevation: 8,
-      shadowOffset: {width: 0,height: 4}
+    shadowRadius: 10,
+    shadowOpacity: 0.6,
+    elevation: 8,
+    shadowOffset: {width: 0,height: 4}
   },
+
   history_amount:{
     alignSelf: 'flex-end'
   },
-    
-    text_label:{
-	fontWeight:"bold",
-	fontSize: 16
-    }
+
+  card_item_details:{
+    shadowColor: '#30C1DD',
+    shadowRadius: 10,
+    shadowOpacity: 0.6,
+    elevation: 20,
+    shadowOffset: {width: 0,height: 4}
+  },
+
+  details_text:{
+    paddingTop: 40
+  },
+
+  card_item_details_btn:{
+
+  }
 });

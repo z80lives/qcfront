@@ -29,30 +29,30 @@ export class LoginScreen extends Component{
       <View style={styles.logoContainer}>
         <Image source={require('../images/logo.png')} />
       </View >
-	       <TextInput
-		 style={styles.textField}
-		 placeholder="IKAD"
-		 returnKeyType={'done'}
-		 autoCapitalize={'none'}
-		 autoCorrect={false}
-		 />
+	    <TextInput
+    		 style={styles.textField}
+    		 placeholder="IKAD"
+    		 returnKeyType={'done'}
+    		 autoCapitalize={'none'}
+    		 autoCorrect={false}
+		  />
 
-	       <TextInput
-		 style={[styles.textField, {marginTop: 10}]}
-		 secureTextEntry={true}
-		 placeholder="Password"
-		 returnKeyType={'done'}
-		 autoCapitalize={'none'}
-		 autoCorrect={false}
-		 />
+	    <TextInput
+    		 style={[styles.textField, {marginTop: 10}]}
+    		 secureTextEntry={true}
+    		 placeholder="Password"
+    		 returnKeyType={'done'}
+    		 autoCapitalize={'none'}
+    		 autoCorrect={false}
+		  />
 
 			<TouchableOpacity
-		  onPress={
-			 Actions.main
-		  }
-		  style={[styles.loginButton, styles.loginButtonContainer]}
-
-		  ><Text style={styles.loginTextStyle} > Login</Text></TouchableOpacity>
+    		  onPress={
+    			 Actions.main
+    		  }
+    		  style={[styles.loginButton, styles.loginButtonContainer]}
+		  >
+      <Text style={styles.loginTextStyle} > Login</Text></TouchableOpacity>
 		</View>
 	);
     }

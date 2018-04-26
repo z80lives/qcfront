@@ -38,9 +38,16 @@ export default class QuickCardItem extends Component{
 
     render(){
 	return (
-	    <Card 
+	    <Card
 	      title={this.props.cardId}
-	      containerStyle={{flex:3, width: 300}}
+	      containerStyle={{
+		  flex:3, width: 300,
+		  shadowOffset: {width: 10, height: 14},
+		  shadowColor: '#621722',
+		  shadowOpacity: 1.0,
+		  elevation: 10,
+		  marginBottom:20
+	      }}
 	      >
 	      
 	      <View style={{flex:1, flexDirection:"row"}}>
@@ -63,7 +70,7 @@ export default class QuickCardItem extends Component{
 		buttonStyle={[styles.defaultButton, {borderRadius: 0, marginLeft: 100, marginRight: 0, marginBottom: 0}]}
 		onPress={
 			 Actions.cardDetails
-		  }		
+		  }
 		title='View' />
 
 	    </Card>
