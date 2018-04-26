@@ -31,7 +31,7 @@ export default class App extends Component {
 		       />
 
 		<Stack key="home">
-		  
+
   		<Tabs
 
   		  key="main"
@@ -46,7 +46,7 @@ export default class App extends Component {
                     tabBarStyle={styles.tabBarStyle}
 		    upperCaseLabel={false}
                     indicatorStyle={{ backgroundColor: '#3f132a', height: 4 }}>
-		    
+
 		    <Scene key="tabCards" title="My Cards" component={CardScreen} initial={true}
 			   hideNavBar={true}
 			   tabBarLabel="Home"
@@ -54,10 +54,10 @@ export default class App extends Component {
 		    <Scene key="tabHistory" title="History" component={HistoryScreen} 		       hideNavBar={true}
 			   tabBarLabel="History"
 			   />
-		    
+
 		  </Tabs>
-		  
-		  <Scene key="cardDetails" title="Card Details" component={CardDetailsScreen}/>		  		  
+
+		  <Scene style={{flex: 1}} key="cardDetails" title="Card Details" component={CardDetailsScreen}/>
 		</Stack>
 		</Scene>
 	    </Router>

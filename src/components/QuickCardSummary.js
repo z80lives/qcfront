@@ -32,15 +32,32 @@ export default class QuickCardItem extends Component{
 
     render(){
 	return (
-	    <Card 
+	    <Card
 	      title={this.props.cardId}
-	      containerStyle={{width: 300}}
-	      >
+	      containerStyle={{
+					width: 300,
+					shadowOffset: {width: 10, height: 14},
+					shadowColor: '#621722',
+					shadowOpacity: 1.0,
+					elevation: 10,
+					marginBottom:20
+				}}
+	    >
 	      <Text>
-		Account#: {this.state.account_num}
+					<Text style={{fontWeight:"bold", fontSize: 16}}>
+						Account#:
+					</Text>
+					<Text>
+						{this.state.account_num}
+					</Text>
 	      </Text>
 	      <Text style={{marginBottom: 10}}>
-		Balance: {this.props.balance}
+					<Text style={{fontWeight:"bold", fontSize: 16}}>
+						Balance:
+					</Text>
+					<Text>
+						{this.props.balance}
+					</Text>
 	      </Text>
 
 	      <Button
@@ -49,7 +66,7 @@ export default class QuickCardItem extends Component{
 		buttonStyle={{borderRadius: 0, marginLeft: 150, marginRight: 0, marginBottom: 0}}
 		onPress={
 			 Actions.cardDetails
-		  }		
+		  }
 		title='View' />
 
 	    </Card>
