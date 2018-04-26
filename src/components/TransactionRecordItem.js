@@ -17,19 +17,34 @@ export default class TransactionRecordItem extends Component{
     constructor(props){
 	super(props);
 	this.state= {
-	    date:"21-04-2018"
+	    date: props.date,
+	    time: props.time,
+	    amount: props.amount,
+	    location: props.location
 	};
     }
     render(){
-	var amount = this.props.amount;
 	return (
-	    <View style={styles.history_item}>
-	      <Text> <Text style={{fontWeight:"bold", fontSize: 16}}>Date:</Text> {this.state.date}</Text>
-            <Text style={styles.history_amount}> <Text style={{fontWeight:"bold", fontSize: 15}}> Amount: </Text>  <Text >{amount}</Text></Text>
+	    <View style={[styles.history_item,{flexDirection:"row"}]}>
+	      <View style={{flex:1, flexDirection:"column"}}>		
+		<Text style={styles.text_label}>Date/Time:</Text>
+		<Text style={styles.text_label}>Amount:</Text>
+		<Text style={styles.text_label}>Location:</Text>
+	      </View>
+	      <View style={{flex:1, flexDirection:"column"}}>
+		<Text >{this.state.date}     {this.state.time}</Text>
+		<Text >RM{this.state.amount}</Text>
+		<Text>{this.state.location}</Text>
+	      </View>
 	    </View>
 	);
     }
 }
+/**
+
+	      <Text> <Text style={{fontWeight:"bold", fontSize: 16}}>Date/Time:</Text> {this.state.date} <Text>{this.state.time}</Text></Text>
+            <Text style={styles.history_amount}> <Text style={{fontWeight:"bold", fontSize: 15}}> Amount: </Text>  <Text >{amount}</Text></Text>
+*/
 
 /**
 

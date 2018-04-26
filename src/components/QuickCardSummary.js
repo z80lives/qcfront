@@ -39,9 +39,6 @@ export default class QuickCardItem extends Component{
 	      <Text>
 		Account#: {this.state.account_num}
 	      </Text>
-	      <Text style={{marginBottom: 10}}>
-		Balance: {this.props.balance}
-	      </Text>
 
 	      <Button
 		backgroundColor='#03A9F4'

@@ -2,9 +2,19 @@ import {StyleSheet} from 'react-native';
 
 export const colors = {
     tab:{
-	activeColor: '#fc9e4b',
-	inactiveColor: '#eaab46'
+	activeColor: '#fcfefc',
+	inactiveColor: '#fafbf6',
+	indicatorBG: '#3f132a'
     }
+};
+
+
+
+
+//Not used yet
+export const drawerStyles = {
+  drawer: { shadowColor: '#ff0000', shadowOpacity: 0.8, shadowRadius: 3},
+  main: {paddingLeft: 3}
 };
 
 export const styles = StyleSheet.create({
@@ -14,8 +24,9 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF'
   },
+    
   logoContainer:{
-    justifyContent:'center',
+    justifyContent:'center'
   },
 
     cardContainer:{
@@ -105,19 +116,22 @@ export const styles = StyleSheet.create({
 
     tabBarStyle: {
 	    //	color: "#3f23f3",
-            borderTopWidth : .2,
-            borderColor    : '#b7b7b7',
-            backgroundColor: '#3f433a',
-            opacity        : 1,
-
-	    marginBottom: 1,
+        backgroundColor: '#ff433a',
+        opacity        : 1,
+	    
             flexWrap: 'nowrap',
             //flexDirection:'row',
             shadowColor: '#000',
-            shadowOffset: { width: 10, height: 2 },
+            shadowOffset: { width: 20, height: 2 },
             shadowOpacity: 0.2,
             shadowRadius: 2,
             elevation: 1
+    },
+
+    navBarStyle:{
+	backgroundColor: '#ff433a',
+	borderBottomWidth:0,
+	elevation: 1
     },
 
   instructions: {
@@ -127,18 +141,23 @@ export const styles = StyleSheet.create({
   },
 
   history_item: {
-    flex:1,
+    flex:2,
     flexDirection:"column",
     backgroundColor: 'white',
     margin: 4,
     padding: 15,
     shadowColor: '#30C1DD',
-  shadowRadius: 10,
-  shadowOpacity: 0.6,
-  elevation: 8,
-  shadowOffset: {width: 0,height: 4}
+      shadowRadius: 10,
+      shadowOpacity: 0.6,
+      elevation: 8,
+      shadowOffset: {width: 0,height: 4}
   },
   history_amount:{
     alignSelf: 'flex-end'
-  }
+  },
+    
+    text_label:{
+	fontWeight:"bold",
+	fontSize: 16
+    }
 });

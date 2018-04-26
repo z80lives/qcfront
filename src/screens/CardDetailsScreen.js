@@ -9,7 +9,7 @@ import {
 
 
 import {styles} from '../styles/styles';
-import { Actions } from 'react-native-router-flux';
+//import { Actions } from 'react-native-router-flux';
 
 
 export class CardDetailsScreen extends Component{

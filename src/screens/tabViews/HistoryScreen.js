@@ -27,6 +27,23 @@ const list = [
 
 ];
 
+/**
+*	    date:"21-04-2018",
+	    time: "12:54:12",
+	    amount: "20.30",
+	    location: "Guardian NU Sentral" 
+**/
+
+var locations = [
+    "MRT Semantan",
+    "McDonalds",
+    "Guardian NU Sentral"    
+];
+
+function randomDate(start, end) {
+    return new Date(start.getTime() + Math.random()
+		    * (end.getTime() - start.getTime()));
+}
 
 
 export class HistoryScreen extends Component{
@@ -36,7 +53,14 @@ export class HistoryScreen extends Component{
 	};
 	this.state.data = [];
 	for(let i=0; i< 30; i++){
-	    this.state.data.push({key: i+"", amount: Math.floor(Math.random()*100)+""});
+	    var rdate = randomDate(new Date(2012, 0, 1), new Date());
+	    var li = Math.floor(Math.random()*locations.length);
+	    this.state.data.push({key: i+"",
+				  amount: Math.floor(Math.random()*100)+"",
+				  date: rdate.toLocaleDateString(),
+				  time: rdate.toLocaleTimeString(),
+				  location: locations[li]
+				 });
 	}
     }
     render(){
@@ -47,7 +71,7 @@ export class HistoryScreen extends Component{
       		data={this.state.data}
       		renderItem={
     		    ({item}) => <CardView
-    				              amount={item.amount}
+				      {...item}
 			                  />
 
 		      }
