@@ -70,5 +70,6 @@ export class CardListScreen extends Component{
 	    </View>
 	);
     }
+}
 
 export default CardListScreen;

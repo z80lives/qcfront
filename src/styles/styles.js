@@ -171,10 +171,17 @@ export const styles = StyleSheet.create({
   },
 
   details_text:{
-    paddingTop: 40
+    paddingBottom: 4
   },
 
   card_item_details_btn:{
 
-  }
+  },
+
+    text_label:{
+        fontWeight:"bold",
+        fontSize: 16
+    }
+
 });
+

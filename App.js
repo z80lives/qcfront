@@ -104,7 +104,10 @@ export default class App extends Component {
 		    
 		  </Scene>
 		  
-		  <Scene key="cardDetails" title="Card Details" component={CardDetailsScreen}/>		  		  
+		<Scene key="cardDetails" title="Card Details" component={CardDetailsScreen}
+		       initial={true}
+
+		       />		  		  
 		</Stack>
 		</Scene>
 	    </Router>
