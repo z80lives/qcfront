@@ -14,7 +14,7 @@ import { Router, Scene, Stack, Tabs, Drawer } from 'react-native-router-flux';
 //import {MainNav} from './src/screens/MainNav';
 //import NavigationDrawer from './src/screens/NavDrawer';
 import SideMenu from './src/screens/SideMenu';
-import {NavBarCustom} from './src/screens/NavBarCustom';
+//import {NavBarCustom} from './src/screens/NavBarCustom';
 
 
 import CardScreen from './src/screens/tabViews/CardScreen';
@@ -23,8 +23,9 @@ import HistoryScreen from './src/screens/tabViews/HistoryScreen';
 import {styles, colors} from './src/styles/styles';
 
 import TabIcon from './src/components/TabIcon';
+
 //import MenuIcon from './src/images/drawer.png';
-import MenuIcon from './src/components/DrawerIcon';
+//import MenuIcon from './src/components/DrawerIcon';
 
 //import SideMenu from 'react-native-side-menu';
 //import Sidebar from 'react-native-sidebar';

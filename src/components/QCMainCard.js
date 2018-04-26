@@ -32,7 +32,7 @@ export default class QuickCardItem extends Component{
 	    idnum: "123445242342",
 	    account_num: "1234-123-1234",
 	    limit: "50",
-	    progress: 20
+	    progress: props.progress
 	};
     }
 
@@ -40,31 +40,21 @@ export default class QuickCardItem extends Component{
 	return (
 	    <Card 
 	      title={this.props.cardId}
-	      containerStyle={{flex:3, width: 300}}
 	      >
 	      
-	      <View style={{flex:1, flexDirection:"row"}}>
-		<Text style={styles.text_label}>ID:</Text>
-		<Text>{this.state.account_num}		  
+	      <View style={{flexDirection:"row"}}>
+		<Text style={styles.text_label}>ID:
 		</Text>
+		  <Text>{this.state.account_num}		  
+		  </Text>
 	      </View>
 
-	      <View style={{flex:1, flexDirection:"row"}}>
+	      <View >
 		<Text style={styles.text_label}>Limit Usage:</Text>
 		<View style={{padding:10}}>
-		  <Progress.Bar progress={0.3}  />
+		  <Progress.Bar progress={this.state.progress}  />
 		</View>
 	      </View>
-
-
-	      <Button
-		backgroundColor='#03A9F4'
-		fontFamily='Lato'
-		buttonStyle={[styles.defaultButton, {borderRadius: 0, marginLeft: 100, marginRight: 0, marginBottom: 0}]}
-		onPress={
-			 Actions.cardDetails
-		  }		
-		title='View' />
 
 	    </Card>
 	      );

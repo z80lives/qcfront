@@ -88,7 +88,7 @@ export const styles = StyleSheet.create({
 
     defaultButton:{
 	alignItems: 'center',
-	backgroundColor: '#feaece',
+	backgroundColor: '#ff1122',
 	paddingLeft: 30,
 	paddingRight: 30,
 	paddingTop: 10,
