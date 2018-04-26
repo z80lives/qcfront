@@ -11,6 +11,8 @@ import CardView from '../../components/QuickCardSummary.js';
 import MainCardView from '../../components/QCMainCard.js';
 
 import ActionButton from 'react-native-action-button';
+import { Actions } from 'react-native-router-flux';
+
 
 var kidNames = [
     "Ali",
@@ -72,9 +74,9 @@ export class CardListScreen extends Component{
 		/>
 		<ActionButton
 	    buttonColor="rgba(231,76,60,1)"
-	    onPress={() => { console.log("hi");}}
+	    onPress={Actions.addNewCard}	    
 		/>	 
-	    </View>
+		</View>		
 	);
     }
 }

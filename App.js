@@ -66,10 +66,10 @@ export default class App extends Component {
 		<Scene key="login" component={LoginScreen} title="Login"
 		       hideTabBar
 		       hideNavBar={true}
+		       initial={true}
 		       />
 
 		<Stack key="home"
-		       initial={true}
 
 		       >
   		<Scene		

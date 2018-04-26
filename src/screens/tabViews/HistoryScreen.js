@@ -58,9 +58,9 @@ export class HistoryScreen extends Component{
 	
 	this.state ={
 	    name: props.username
-	};
+	};	
 	this.state.data = [];
-	for(let i=0; i< 30; i++){
+	for(let i=0; i< 6; i++){
 	    var rdate = randomDate(new Date(2012, 0, 1), new Date());
 	    var li = Math.floor(Math.random()*locations.length);
 	    this.state.data.push({key: i+"",
