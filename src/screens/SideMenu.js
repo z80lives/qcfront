@@ -13,18 +13,28 @@ import { AppRegistry, Image, StatusBar, ImageBackground } from "react-native";
 
 import {
     View,
-    Button    
+    Button,
+    Text
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 export default class SideBar extends React.Component {
     render() {
 	return (
-	    <View>
+	    <View style={{flex:1, flexDirection:"column"}}>
+	      <View style={{flex:0.3}}>
+	      </View>
+	      <View style={{flex:0.1}}>
+		<Text style={{marginLeft:10, fontWeight:"bold", fontSize:20}}>Bank List </Text>
+	      </View>
+	      <View style={{flex:0.4}}>
+	      </View>
+	      <View style={{flex:0.2}}>
 	      <Button
 		title="Logout"
 		onPress={Actions.login}
 		/>
+	      </View>
 	    </View>
 	    
 	);

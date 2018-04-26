@@ -4,18 +4,20 @@ import {
     Text
 } from 'react-native';
 
-import {styles} from '../../styles/styles';
+//import {styles} from '../../styles/styles';
 
 
-export default class AddNewCard extends Component{
+export class AddNewCard extends Component{
     constructor(props){
-
+	super(props);
     }
 
     render(){
 	return(<View>
-
+	       <Text>Add new card</Text>
 	       </View>
 	      );
     }
 }
+
+export default AddNewCard;

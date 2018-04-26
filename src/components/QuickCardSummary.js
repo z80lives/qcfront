@@ -72,7 +72,6 @@ export default class QuickCardItem extends Component{
 			 Actions.cardDetails
 		  }
 		title='View' />
-
 	    </Card>
 	      );
 /*	return (

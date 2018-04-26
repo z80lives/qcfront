@@ -22,6 +22,11 @@ import CardDetailsScreen from './src/screens/CardDetailsScreen';
 import HistoryScreen from './src/screens/tabViews/HistoryScreen';
 import {styles, colors} from './src/styles/styles';
 
+
+import {AddNewCard} from './src/screens/AddNewCard';
+
+import {BankListRegistered} from './src/screens/BankListRegistered';
+
 import TabIcon from './src/components/TabIcon';
 
 //import MenuIcon from './src/images/drawer.png';
@@ -65,6 +70,7 @@ export default class App extends Component {
 
 		<Stack key="home"
 		       initial={true}
+
 		       >
   		<Scene		
   		  key="main"
@@ -104,10 +110,16 @@ export default class App extends Component {
 		    
 		  </Scene>
 		  
-		<Scene key="cardDetails" title="Card Details" component={CardDetailsScreen}
-		       initial={true}
+		<Scene key="cardDetails" title="Card Details" component={CardDetailsScreen}		
+		       />
 
-		       />		  		  
+		<Scene key="addNewCard" title="AddCard" component={AddNewCard}
+		       />
+	  	<Scene key="bankList" title="Choose Account" component={BankListRegistered}		       
+		       initial={true}
+		       />
+		
+	  	
 		</Stack>
 		</Scene>
 	    </Router>

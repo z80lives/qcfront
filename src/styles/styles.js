@@ -62,6 +62,25 @@ export const styles = StyleSheet.create({
     elevation: 10
   },
 
+    reportButton:{
+  	backgroundColor: '#f53b57',
+  	borderWidth: 2,
+  	borderColor: '#f93b57',
+  	borderRadius: 30,
+	shadowOffset: {width: 10, height: 10},
+	shadowColor: '#621722',
+	shadowOpacity: 1.0,
+	elevation: 10
+  },
+
+  reportButtonContainer: {
+  	marginVertical: 10,
+  	height: 50,
+  	width: 250,
+  	justifyContent: 'center',
+  	alignItems: 'center'
+  },
+
     subtitleView:{
 	flexDirection: 'row',
 	paddingLeft: 10,
@@ -181,7 +200,23 @@ export const styles = StyleSheet.create({
     text_label:{
         fontWeight:"bold",
         fontSize: 16
+    },
+
+    title1_style:{
+	marginLeft: 25,
+	marginRight: 10,
+	marginTop:20,
+        fontSize: 20,
+	fontWeight:"bold"
+    },
+
+    subtitle1_style:{
+	marginLeft: 25,
+	marginRight: 10,
+	marginTop:20,
+        fontSize: 13
     }
+
 
 });
 

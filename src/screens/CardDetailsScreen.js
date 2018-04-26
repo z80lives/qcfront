@@ -4,7 +4,8 @@ import {
     View,
     Text,
     Switch,
-    Button
+    Button,
+    TouchableOpacity
 } from 'react-native';
 import {Card,
 	Divider
@@ -51,11 +52,6 @@ export class CardDetailsScreen extends Component{
 		    </Text>		    
 		    
 		    <View style={{flexDirection:"column"}}>
-		      <Divider style={{ marginTop:3, marginBottom:3, backgroundColor: '#ffeeee' }} />		      
-		      <Text style={styles.text_label}>Limit Usage:</Text>
-		      <View style={{padding:10}}>
-			<Progress.Bar progress={0.3}  />
-		      </View>
 		      <Divider style={{ marginTop:3, marginBottom:3, backgroundColor: '#ffeeee' }} />		      
 		    </View>
 
@@ -130,9 +126,11 @@ export class CardDetailsScreen extends Component{
 		  
 		</View>
 
-		<View style={styles.card_item_details_btn}>
-      		  <Button
-		    style={[styles.defaultButton]}
+		<View>
+
+		  
+      		  <TouchableOpacity
+		    style={[{backgroundColor: "#ff0000"}]}
 		    raised
       		    onPress={()=>{alert("Thank you for reporting.");}}
       		    title="Report stolen"
