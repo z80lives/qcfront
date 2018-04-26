@@ -109,12 +109,24 @@ export const styles = StyleSheet.create({
 
   defaultButton:{
   	alignItems: 'center',
-  	backgroundColor: '#f53b57',
+   	backgroundColor: '#f53b57',
   	paddingLeft: 30,
   	paddingRight: 30,
   	paddingTop: 10,
   	paddingBottom: 10
   },
+    
+    navButton:{
+	elevation: 10,
+  	alignItems: 'center',
+  	backgroundColor: 'white',
+  	paddingLeft: 30,
+  	paddingRight: 30,
+  	paddingTop: 10,
+  	paddingBottom: 10,
+	margin: 2
+  },
+
 
   defaultText:{
   	margin: 3,
