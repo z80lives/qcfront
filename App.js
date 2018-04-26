@@ -118,9 +118,8 @@ export default class App extends Component {
 	    	<Scene key="viewHistory" title="View History" component={HistoryScreen}
 		/>
 
-	  	<Scene key="bankList" title="Choose Account" component={BankListRegistered}		       
-		       />
-		
+	  	<Scene key="bankList" title="Choose Account" component={BankListRegistered}		       initial={true}
+		       />		
 	  	
 		</Stack>
 		</Scene>

@@ -37,9 +37,18 @@ class BankAccount extends Component{
 		<View style={{flexDirection:"row"}}>
 		<Text style={{marginLeft:14, marginBottom: 4}}>MayBank1</Text>
 		<Text style={{marginLeft:14, marginBottom: 4}}>5572600123</Text>
+				
+	    </View>
+		<Button
+		backgroundColor='#03A9F4'
+		fontFamily='Lato'
+		buttonStyle={[styles.defaultButton, {borderRadius: 0, marginLeft: 50, marginRight: 100, marginBottom: 0}]}
+		onPress={
+		    () => alert("Done")
+		}	    
+	    title='Set' />
 
-		</View>
-		</View>
+	    </View>
 		</View>
 	    </Card>	    
 	);
